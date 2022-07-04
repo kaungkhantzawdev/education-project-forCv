@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="img/education.svg">
+
+<div class="loader-container" style="z-index: 2002;">
+    <div class="loader">Loading...</div>
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUN</title>
+    <style>
+        .loader-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            position: fixed;
+            z-index: 3002;
+        }
+        
+        .loader,
+        .loader:before,
+        .loader:after {
+            border-radius: 50%;
+            width: 2.5em;
+            height: 2.5em;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation: load7 1.8s infinite ease-in-out;
+            animation: load7 1.8s infinite ease-in-out;
+        }
+        
+        .loader {
+            color: #ffc107;
+            font-size: 10px;
+            margin: 80px auto;
+            position: relative;
+            text-indent: -9999em;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+        
+        .loader:before,
+        .loader:after {
+            content: '';
+            position: absolute;
+            top: 0;
+        }
+        
+        .loader:before {
+            left: -3.5em;
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+        
+        .loader:after {
+            left: 3.5em;
+        }
+        
+        @-webkit-keyframes load7 {
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 2.5em 0 -1.3em;
+            }
+            40% {
+                box-shadow: 0 2.5em 0 0;
+            }
+        }
+        
+        @keyframes load7 {
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 2.5em 0 -1.3em;
+            }
+            40% {
+                box-shadow: 0 2.5em 0 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="css/imagehover.min.css" class="">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- nav section start  -->
+    <header class="container-fluid header-main sticky-top animate__animated animate__fadeIn" id="header-main">
+        <div class="row py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-inline-block">
+                                <div class="d-inline-block mr-3">
+                                    <i class="fas fa-phone-alt text-warning mr-1"></i>
+                                    <span class="text-white font-weight-bold">09768700966</span>
+                                </div>
+                                <div class="d-inline-block">
+                                    <i class="fas fa-envelope-open-text text-warning mr-1"></i>
+                                    <span class="text-white font-weight-bold">kaungkhantzaw235@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="d-inline-block">
+                                <a class="text-capitalize font-weight-bold text-white mr-2 " href="#">create an account</a>
+                                <a class="btn btn-warning" href="#">
+                                    <i class="fas fa-lock"></i>
+                                    <span class="font-weight-bold ml-1">sign in</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="container-fluid header position-fixed animate__animated animate__fadeInDown animate__delay-1s" id="header">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-dark  px-0">
+                            <a class="navbar-brand" href="#">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/education.svg" alt="" style="width: 35px;">
+                                    <span class="font-weight-bolder h4 mb-0 ml-2">
+                                        <span class="text-primary">E</span>
+                                    <span class="text-danger">D</span>
+                                    <span class="text-warning">U</span>
+                                    <span class="text-info">N</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav d-lg-flex align-items-lg-center justify-content-lg-center w-100">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle current-section text-white" href="#home" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Home
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-white" href="#courses" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Shop
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-white" href="#scholorships" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Vendors
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#contact">Contact</a>
+                                    </li>
+
+                                </ul>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-white">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-white">
+                                            <i class="fas fa-user"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-info">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- nav section end  -->
+
+    <!-- home section start  -->
+    <section class="container-fluid position-absolute cover w-100 min-vh-100">
+    </section>
+    <section class="container-fluid home" id="home">
+        <div class="row">
+            <div class="container">
+                <div class="row min-vh-100">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="position-absolute home-item text-center animate__animated animate__fadeIn animate__delay-1s">
+                            <div class="">
+                                <span class="h2 text-white font-weight-bold">Welcome to your</span>
+                            </div>
+                            <div class="my-3">
+                                <span class="h1 home-item-two text-white text-capitalize font-weight-bold">first <span class="text-warning">learning</span> platform</span>
+                            </div>
+                            <div class="home-item-three">
+                                <p class="text-white-50">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, ab natus, ipsam aliquam <br class="d-none d-lg-block"> voluptatum dicta unde placeat beatae dolore inventore, deleniti quidem!
+                                </p>
+                            </div>
+                            <div class="my-3">
+                                <a href="#" class="btn btn-warning font-weight-bold text-capitalize">learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#home" class="scroll text-decoration-none">
+            <div class="">
+                <div class="rounded  d-flex align-items-center justify-content-center scroll-item">
+                    <i class="fas fa-chevron-up text-white"></i>
+                </div>
+            </div>
+        </a>
+    </section>
+    <section class="container-fluid ">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 p-md-0 home-container d-flex justify-content-center position-relative wow animate__fadeInUp ">
+                        <div class="position-absolute w-100 rounded" style="
+                            background-color: #dc3545d5;
+                            height: 100%;
+                            z-index: 1;
+                        "></div>
+                        <div class="position-absolute rounded" style="
+                            background-image: url(img/onebg.jpg);
+                            background-size: cover;
+                            width: 100%;
+                            height: 100%;
+                        "></div>
+                        <div class="text-white home-text p-4 rounded ">
+                            <div class="text-center">
+                                <div class="w-100">
+                                    <img src="img/twelve.svg " alt="" class="home-container-item" style="width: 60px;">
+                                </div>
+                                <div class="my-3">
+                                    <span class="text-capitalize font-weight-bold">quality teachers</span>
+                                </div>
+                                <div class="">
+                                    <span class="">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi labore quo quia porro praesentium cumque adipisci at ab mollitia nostrum 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 p-md-0 home-container d-flex justify-content-center position-relative wow animate__fadeInUp animate__delay-1s">
+                        <div class="position-absolute w-100 rounded" style="
+                            background-color: #ffc107de;
+                            height: 100%;
+                            z-index: 1;
+                        "></div>
+                        <div class="position-absolute rounded" style="
+                            background-image: url(img/group.jpg);
+                            background-size: cover;
+                            width: 100%;
+                            height: 100%;
+                        "></div>
+                        <div class="text-white home-text p-4 rounded ">
+                            <div class="text-center">
+                                <div class="w-100">
+                                    <img src="img/onetwo.svg " alt="" class="home-container-item" style="width: 45px;">
+                                </div>
+                                <div class="my-3">
+                                    <span class="text-capitalize font-weight-bold">global recognition</span>
+                                </div>
+                                <div class="">
+                                    <span class="">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi labore quo quia porro praesentium cumque adipisci at ab mollitia nostrum 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 p-md-0 home-container d-flex justify-content-center position-relative wow animate__fadeInUp animate__delay-2s">
+                        <div class="position-absolute w-100 home-item-bg rounded"></div>
+                        <div class="home-background position-absolute rounded"></div>
+                        <div class="text-white home-text p-4 rounded ">
+                            <div class="text-center">
+                                <div class="w-100">
+                                    <img src="img/seven.svg " alt="" class="home-container-item" style="width: 45px;">
+                                </div>
+                                <div class="my-3">
+                                    <span class="text-capitalize font-weight-bold">best curriculum</span>
+                                </div>
+                                <div class="">
+                                    <span class="">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi labore quo quia porro praesentium cumque adipisci at ab mollitia nostrum 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section end  -->
+
+    <!-- about section start  -->
+    <section class="container-fluid about" id="about">
+        <div class="row">
+            <div class="container">
+                <div class="row d-flex flex-column-reverse flex-md-row">
+                    <div class="col-12 col-md-6">
+                        <div class="mt-4 mt-md-0 wow animate__fadeInUp">
+                            <h1 class="font-weight-bold mb-0">
+                                We are the top learning program
+                            </h1>
+                            <p class="text-black-50 my-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus a dignissimos facere accusantium, minima quos obcaecati in eum sapiente eius fuga architecto repellendus quaerat libero cum vitae necessitatibus amet!
+                            </p>
+                            <p class="text-black-50 mb-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus a dignissimos facere accusantium, minima quos obcaecati in eum sapiente eius fuga architecto repellendus quaerat libero cum vitae necessitatibus amet!
+                            </p>
+                            <a href="#" class="btn btn-warning">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="position-relative d-flex align-items-center justify-content-center wow animate__fadeInRight animate__delay-1s">
+                            <div class="new">
+                                <img src="img/new.jpg" alt="" class="rounded shadow" style="width: 300px;">
+                            </div>
+                            <div class="position-absolute new imghvr-blur rounded" style=" left: 0; bottom: 15px;">
+                                <img src="img/four.jpg" alt="" class="rounded shadow" style="width: 250px;">
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam beatae sequi eaque.
+                                    <a href="www.google.com" class=""></a>
+                            </div>
+                            <div class="position-absolute new imghvr-blur rounded" style=" right: 0; top: 15px;">
+                                <img src="img/two.jpg" alt="" class="rounded shadow" style="width: 200px;">
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </figcaption>
+                                <a href="www.google.com" class=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-12 col-md-6 col-lg-3 mb-5">
+                        <div class="d-flex align-items-center new wow animate__fadeInUp animate__delay-4s">
+                            <img src="img/education.svg" alt="" style="width: 50px;">
+                            <div class="ml-5 ml-lg-3 program-item">
+                                <span class="h4 font-weight-bold d-block mb-1"> 46+</span>
+                                <span class="text-capitalize">university facilites</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-5">
+                        <div class="d-flex align-items-center new wow animate__fadeInUp animate__delay-3s">
+                            <img src="img/books.svg" alt="" style="width: 45px">
+                            <div class="ml-5 ml-lg-3 program-item">
+                                <span class="h4 font-weight-bold d-block mb-1"> 237k+</span>
+                                <span class="text-capitalize">libary books</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-5">
+                        <div class="d-flex align-items-center new wow animate__fadeInUp animate__delay-2s">
+                            <img src="img/chemical.svg" alt="" style="width: 45px;">
+                            <div class="ml-5 ml-lg-3 program-item">
+                                <span class="h4 font-weight-bold d-block mb-1"> 2k+</span>
+                                <span class="text-capitalize">total students</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-5">
+                        <div class="d-flex align-items-center new wow animate__fadeInUp animate__delay-1s">
+                            <img src="img/earth.svg" alt="" style="width: 45px">
+                            <div class="ml-5 ml-lg-3 program-item">
+                                <span class="h4 font-weight-bold d-block mb-1"> 2k+</span>
+                                <span class="text-capitalize">university facilites</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end  -->
+
+    <!-- testimonials section start  -->
+    <section class="container-fluid testimonials" id="testimonials">
+        <div class="row py-5">
+            <div class="container">
+                <div class="row min-vh-100 ">
+                    <div class="col-12 mb-5">
+                        <div class="text-center text-white ">
+                            <h1 class="text-uppercase font-weight-bold wow animate__fadeInDown">testimonials</h1>
+                            <p class="text-white-50 mb-0 wow animate__fadeInUp animate__delay-1s">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3 new">
+                        <div class="wow animate__fadeInUp animate__delay-1s">
+                            <div class="temon text-white rounded">
+                                <p class="mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, incidunt. Consequatur, fugit ducimus. Aperiam voluptatem sit tempore dolores expedita nesciunt aut quaerat nisi? Necessitatibus distinctio nihil commodi, delectus quam beatae! Lorem ipsum
+                                </p>
+                                <div class="temon-item rounded shadow"></div>
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="text-capitalize text-white">john smith</h5>
+                                <div class="">
+                                    <div class="">
+                                        <a href="#" class=""><i class="fab fa-facebook text-warning"></i></a>
+                                        <a href="#" class=""><i class="fab fa-twitter mx-2 text-warning"></i></a>
+                                        <a href="#" class=""><i class="fab fa-instagram text-warning"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3 new">
+                        <div class="wow animate__fadeInUp">
+                            <div class="temon text-white rounded">
+                                <p class="mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, incidunt. Consequatur, fugit ducimus. Aperiam voluptatem sit tempore dolores expedita nesciunt aut quaerat nisi? Necessitatibus distinctio nihil commodi, delectus quam beatae! Lorem ipsum
+                                </p>
+                                <div class="temon-item rounded shadow" style="background-image: url(img/profile-2.jpg);"></div>
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="text-capitalize text-white">john smith</h5>
+                                <div class="">
+                                    <div class="">
+                                        <a href="#" class=""><i class="fab fa-facebook text-warning"></i></a>
+                                        <a href="#" class=""><i class="fab fa-twitter mx-2 text-warning"></i></a>
+                                        <a href="#" class=""><i class="fab fa-instagram text-warning"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3 new">
+                        <div class="wow animate__fadeInUp animate__delay-1s">
+                            <div class="temon text-white rounded">
+                                <p class="mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, incidunt. Consequatur, fugit ducimus. Aperiam voluptatem sit tempore dolores expedita nesciunt aut quaerat nisi? Necessitatibus distinctio nihil commodi, delectus quam beatae! Lorem ipsum
+                                </p>
+                                <div class="temon-item rounded shadow" style="background-image: url(img/profile-3.jpg);"></div>
+                            </div>
+                            <div class="mt-5 text-center">
+                                <h5 class="text-capitalize text-white">john smith</h5>
+                                <div class="">
+                                    <div class="">
+                                        <a href="#" class=""><i class="fab fa-facebook text-warning"></i></a>
+                                        <a href="#" class=""><i class="fab fa-twitter mx-2 text-warning"></i></a>
+                                        <a href="#" class=""><i class="fab fa-instagram text-warning"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text-center wow animate__fadeInUp animate__delay-1s">
+                            <a href="#" class="btn btn-outline-warning text-capitalize">browe all clients</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonials section end  -->
+
+    <!-- scholarships section start  -->
+    <section class="container-fluid scholarships" id="scholarships">
+        <div class="row vh-100">
+            <div class="col-12 p-0 box"></div>
+            <div class="col-8 p-0 box-one">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="">
+                                <div class="box-one-item bg-white vh-100 p-5 shadow new-one">
+                                    <h1 class="text-warning font-weight-bold wow animate__fadeInUp">Scholarships</h1>
+                                    <p class="text-black-50 my-3 wow animate__fadeInDown animate__delay-1s">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum architecto, voluptates officia, exercitationem repudiandae nam ad deserunt blanditiis perspiciatis quisquam beatae iure alias repellat consequatur quo tempora veniam ab ipsa.
+                                    </p>
+                                    <a href="#" class="text-capitalize btn btn-outline-warning wow animate__delay-2s animate__fadeInUp">learn now</a>
+                                    <div class="mt-3 wow animate__fadeInDown animate__delay-3s">
+                                        <div class="">
+                                            <a href="#" class=""><i class="fab fa-facebook text-warning"></i></a>
+                                            <a href="#" class=""><i class="fab fa-twitter mx-2 text-warning"></i></a>
+                                            <a href="#" class=""><i class="fab fa-instagram text-warning"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-0 box-two"></div>
+        </div>
+    </section>
+    <!-- scholarships section end  -->
+
+    <!-- courses section start  -->
+    <section class="container-fluid courses" id="courses">
+        <div class="row">
+            <div class="container">
+                <div class="row min-vh-100 py-5">
+                    <div class="col-12 mb-5">
+                        <div class="text-center text-warning">
+                            <h1 class="text-uppercase font-weight-bold  wow animate__fadeInDown">popular courses</h1>
+                            <p class=" wow animate__fadeInUp animate__delay-1s">
+                                Education is very important for life to get start here.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="new wow animate__fadeInUp animate__delay-1s">
+                            <div class="card border-0 position-relative">
+                                <div class="position-absolute courses-video">
+                                    <img src="img/video.svg" alt="" class="w-75 new-one">
+                                </div>
+                                <img src="img/four.jpg" alt="" class="card-img-top">
+                                <div class="card-bordy p-2">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="btn btn-outline-warning">Program</a>
+                                        <a href="#" class="btn btn-outline-warning">$ 25.00</a>
+                                    </div>
+                                    <div class="p-3 rounded my-2 border">
+                                        <div class="card-title ">
+                                            <span class="font-weight-bold text-uppercase">Java Online Courses</span>
+                                        </div>
+                                        <div class="card-text text-black-50">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur ex voluptatem quisquam cupiditate corrupti quo commodi velit, consequatur odit nostrum, explicabo voluptatibus ipsa sit, sint quae architecto earum dolorum nemo!
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <a href="#" class="btn btn-outline-warning text-uppercase">learn now</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="new wow animate__fadeInUp">
+                            <div class="card border-0 position-relative">
+                                <div class="position-absolute courses-video">
+                                    <img src="img/video.svg" alt="" class="w-75 new-one">
+                                </div>
+                                <img src="img/two.jpg" alt="" class="card-img-top">
+                                <div class="card-bordy p-2">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="btn btn-outline-warning">Drawing</a>
+                                        <a href="#" class="btn btn-outline-warning">$ 25.00</a>
+                                    </div>
+                                    <div class="p-3 rounded my-2 border">
+                                        <div class="card-title ">
+                                            <span class="font-weight-bold text-uppercase">illustrator Online Courses</span>
+                                        </div>
+                                        <div class="card-text text-black-50">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur ex voluptatem quisquam cupiditate corrupti quo commodi velit, consequatur odit nostrum, explicabo voluptatibus ipsa sit, sint quae architecto earum dolorum nemo!
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <a href="#" class="btn btn-outline-warning text-uppercase">learn now</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="new wow animate__fadeInUp animate__delay-1s">
+                            <div class="card border-0 position-relative">
+                                <div class="position-absolute courses-video">
+                                    <img src="img/video.svg" alt="" class="w-75 new-one">
+                                </div>
+                                <img src="img/five.jpg" alt="" class="card-img-top">
+                                <div class="card-bordy p-2">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="btn btn-outline-warning">Business</a>
+                                        <a href="#" class="btn btn-outline-warning">$ 25.00</a>
+                                    </div>
+                                    <div class="p-3 rounded my-2 border">
+                                        <div class="card-title ">
+                                            <span class="font-weight-bold text-uppercase">Produce Online Courses</span>
+                                        </div>
+                                        <div class="card-text text-black-50">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur ex voluptatem quisquam cupiditate corrupti quo commodi velit, consequatur odit nostrum, explicabo voluptatibus ipsa sit, sint quae architecto earum dolorum nemo!
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <a href="#" class="btn btn-outline-warning text-uppercase">learn now</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text-center wow animate__delay-1s animate__fadeInUp">
+                            <a href="#" class="btn btn-outline-warning text-capitalize">browers all courses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section courses end  -->
+
+    <!-- about section start  -->
+    <section class="container-fluid contact" id="contact">
+        <div class="row">
+            <div class="container">
+                <div class="row min-vh-100 py-5">
+                    <div class="col-12 mb-3">
+                        <div class="text-center text-primary">
+                            <h1 class="font-weight-bold wow animate__fadeInDown">Get In Touch</h1>
+                            <p class="text-black-50 wow animate__fadeInUp animate__delay-1s">Call now </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="">
+                            <div class="wow animate__fadeInLeft animate__delay-1s">
+                                <a href="#" class="">
+                                    <i class="fas fa-phone-alt pr-3"></i>
+                                    <span class="">09768700966, 09968321956</span>
+                                </a>
+                            </div>
+                            <div class="my-3 wow animate__fadeInLeft animate__delay-2s">
+                                <a href="#" class="">
+                                    <i class="fas fa-envelope-open pr-3"></i>
+                                    <span class="">kaungkhantzaw235@gmail.com</span>
+                                </a>
+                            </div>
+                            <div class="wow animate__fadeInLeft animate__delay-3s">
+                                <a href="#" class="">
+                                    <i class="fas fa-map-marked pr-3"></i>
+                                    <span class="">Myanmar, Myanaung</span>
+                                </a>
+                            </div>
+                            <div class="my-3 wow animate__fadeInLeft animate__delay-3s">
+                                <a href="#" class="">
+                                    <i class="fab fa-facebook pr-3"></i>
+                                    <span class="">Kaung Khant Zaw</span>
+                                </a>
+                            </div>
+                            <div class="wow animate__fadeInLeft animate__delay-2s">
+                                <a href="#" class="">
+                                    <i class="fab fa-instagram pr-3"></i>
+                                    <span class="">Kaung Khant Zaw</span>
+                                </a>
+                            </div>
+                            <div class="my-3 wow animate__fadeInLeft animate__delay-1s">
+                                <a href="#" class="">
+                                    <i class="fab fa-twitter pr-3"></i>
+                                    <span class="">Kaung Khant Zaw</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="">
+                            <form action="#">
+                                <div class="form-group wow animate__fadeInRight animate__delay-4s">
+                                    <input type="text" class="form-control border-primary" placeholder="Phone">
+                                </div>
+                                <div class="form-group wow animate__fadeInRight animate__delay-3s">
+                                    <input type="text" class="form-control border-primary" placeholder="Phone">
+                                </div>
+                                <div class="form-group wow animate__fadeInRight animate__delay-2s">
+                                    <input type="text" class="form-control border-primary" placeholder="eg@gmail.com">
+                                </div>
+                                <div class="form-group wow animate__fadeInRight animate__delay-1s">
+                                    <textarea name="" placeholder="hello welcome" id="" cols="10" rows="5" class="form-control border-primary"></textarea>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary wow animate__fadeInRight animate__delay-5s">send message</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class=" wow animate__fadeInUp animate__delay-3s">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.8038380673443!2d94.74163531446737!3d16.78643228844136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30bfea14afca8009%3A0xbc97049a79d31e0e!2sShin%20Pin%20Bone%20Pwint%20Rd%2C%20Pathein!5e0!3m2!1sen!2smm!4v1610286686807!5m2!1sen!2smm"
+                                width="100%" height="300" frameborder="0" style="border-radius:0.25rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end  -->
+
+    <section class="container-fluid courses  wow animate__fadeInUp animate__delay-4s">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="py-3">
+                                <span class="text-primary">
+                                Copy Right © 2021, All Rights Reserved.
+                            </span>
+                            </div>
+                            <div class="">
+                                <span class="">
+                                    <a href="#" class="">
+                                        <i class="fab fa-twitter pr-3"></i>
+                                    </a>
+                                </span>
+                                <span class="">
+                                    <a href="#" class="">
+                                        <i class="fab fa-instagram pr-3"></i>
+                                    </a>
+                                </span>
+                                <span class="">
+                                    <a href="#" class="">
+                                        <i class="fab fa-facebook pr-3"></i>
+                                    </a>
+                                </span>
+                                <span class="text-primary">Design By Kkz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.js"></script>
+    <script src="vendor/counter_up/counter_up.js"></script>
+    <script src="vendor/WOW/dist/wow.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $(".counter").counterUp({
+            delay: 10,
+            time: 1000
+        });
+    </script>
+</body>
+
+</html>
